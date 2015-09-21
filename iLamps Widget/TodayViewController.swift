@@ -16,7 +16,7 @@ struct Actions {
     static let offBed = 4
 }
 
-let serverAddress: CFString = "paulf.tk"
+let serverAddress: CFString = "78.227.97.91"
 let serverPort: UInt32 = 1024
 
 var inputStream: NSInputStream!
