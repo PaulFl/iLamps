@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.38.1 clang-700.0.53)"
+options: "812a858d6a6a721b954f181a8020300f"
+inputs: 
+- "/Users/pfleury/Documents/Programmation/Objective-C : Swift/iPhone OS/Projects/iLamps/iLamps/ViewController.swift"
+- "/Users/pfleury/Documents/Programmation/Objective-C : Swift/iPhone OS/Projects/iLamps/iLamps/AppDelegate.swift"
