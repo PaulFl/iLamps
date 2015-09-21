@@ -25,10 +25,11 @@ var readStream:  Unmanaged<CFReadStream>?
 var writeStream: Unmanaged<CFWriteStream>?
 
 class TodayViewController: UIViewController, NCWidgetProviding {
+    @IBOutlet weak var onDesktopButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        onDesktopButton.layer.cornerRadius = 5
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,11 +46,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         completionHandler(NCUpdateResult.NewData)
     }
-    @IBAction func onDesktop(sender: AnyObject) {
-        connectToServer()
-        sendData(Actions.onDesktop)
-    }
     
+    @IBAction func onDesktop(sender: AnyObject) {
+    }
     func connectToServer() {
         CFStreamCreatePairWithSocketToHost(nil, serverAddress, serverPort, &readStream, &writeStream)
         inputStream = readStream!.takeRetainedValue()
