@@ -273,7 +273,7 @@
 					};
 					E43885A51B28C7AC00974FD1 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 5639HP753H;
+						DevelopmentTeam = J9S55HH3EC;
 					};
 					E43885B91B28C7AC00974FD1 = {
 						CreatedOnToolsVersion = 7.0;
@@ -613,6 +613,7 @@
 				DA3F2DFD1BB067EC0091E1E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E43885A11B28C7AC00974FD1 /* Build configuration list for PBXProject "iLamps" */ = {
 			isa = XCConfigurationList;

@@ -25,11 +25,27 @@ var readStream:  Unmanaged<CFReadStream>?
 var writeStream: Unmanaged<CFWriteStream>?
 
 class TodayViewController: UIViewController, NCWidgetProviding {
+    
     @IBOutlet weak var onDesktopButton: UIButton!
+    @IBOutlet weak var offDesktopButton: UIButton!
+    @IBOutlet weak var onBedButton: UIButton!
+    @IBOutlet weak var offBedButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        onDesktopButton.layer.cornerRadius = 5
+        onDesktopButton.layer.cornerRadius = 3
+        offDesktopButton.layer.cornerRadius = 3
+        onBedButton.layer.cornerRadius = 3
+        offBedButton.layer.cornerRadius = 3
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if let superview = view.superview {
+            var frame = superview.frame
+            frame = CGRectMake(0, CGRectGetMinY(frame), CGRectGetWidth(frame) + CGRectGetMinX(frame), CGRectGetHeight(frame))
+            superview.frame = frame
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,7 +64,25 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     @IBAction func onDesktop(sender: AnyObject) {
+        connectToServer()
+        sendData(Actions.onDesktop)
     }
+    
+    @IBAction func offDesktop(sender: AnyObject) {
+        connectToServer()
+        sendData(Actions.offDesktop)
+    }
+    
+    @IBAction func onBed(sender: AnyObject) {
+        connectToServer()
+        sendData(Actions.onBed)
+    }
+    
+    @IBAction func offBed(sender: AnyObject) {
+        connectToServer()
+        sendData(Actions.offBed)
+    }
+    
     func connectToServer() {
         CFStreamCreatePairWithSocketToHost(nil, serverAddress, serverPort, &readStream, &writeStream)
         inputStream = readStream!.takeRetainedValue()
