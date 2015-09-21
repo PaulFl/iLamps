@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3F2DF11BB067EC0091E1E2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F2DF01BB067EC0091E1E2 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		DA3F2DF41BB067EC0091E1E2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F2DF31BB067EC0091E1E2 /* TodayViewController.swift */; };
+		DA3F2DF71BB067EC0091E1E2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3F2DF51BB067EC0091E1E2 /* MainInterface.storyboard */; };
+		DA3F2DFB1BB067EC0091E1E2 /* iLamps Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E43885AA1B28C7AC00974FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43885A91B28C7AC00974FD1 /* AppDelegate.swift */; };
 		E43885AC1B28C7AC00974FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43885AB1B28C7AC00974FD1 /* ViewController.swift */; };
 		E43885AF1B28C7AC00974FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43885AD1B28C7AC00974FD1 /* Main.storyboard */; };
@@ -16,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DA3F2DF91BB067EC0091E1E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E438859E1B28C7AC00974FD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA3F2DED1BB067EC0091E1E2;
+			remoteInfo = "iLamps Widget";
+		};
 		E43885BB1B28C7AC00974FD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E438859E1B28C7AC00974FD1 /* Project object */;
@@ -32,7 +43,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DA3F2DFF1BB067EC0091E1E2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA3F2DFB1BB067EC0091E1E2 /* iLamps Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iLamps Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3F2DF01BB067EC0091E1E2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		DA3F2DF31BB067EC0091E1E2 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		DA3F2DF61BB067EC0091E1E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DA3F2DF81BB067EC0091E1E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43885A61B28C7AC00974FD1 /* iLamps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLamps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43885A91B28C7AC00974FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E43885AB1B28C7AC00974FD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +79,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA3F2DEB1BB067EC0091E1E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3F2DF11BB067EC0091E1E2 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E43885A31B28C7AC00974FD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,12 +111,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3F2DEF1BB067EC0091E1E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA3F2DF01BB067EC0091E1E2 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA3F2DF21BB067EC0091E1E2 /* iLamps Widget */ = {
+			isa = PBXGroup;
+			children = (
+				DA3F2DF31BB067EC0091E1E2 /* TodayViewController.swift */,
+				DA3F2DF51BB067EC0091E1E2 /* MainInterface.storyboard */,
+				DA3F2DF81BB067EC0091E1E2 /* Info.plist */,
+			);
+			path = "iLamps Widget";
+			sourceTree = "<group>";
+		};
 		E438859D1B28C7AC00974FD1 = {
 			isa = PBXGroup;
 			children = (
 				E43885A81B28C7AC00974FD1 /* iLamps */,
 				E43885BD1B28C7AC00974FD1 /* iLampsTests */,
 				E43885C81B28C7AC00974FD1 /* iLampsUITests */,
+				DA3F2DF21BB067EC0091E1E2 /* iLamps Widget */,
+				DA3F2DEF1BB067EC0091E1E2 /* Frameworks */,
 				E43885A71B28C7AC00974FD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +147,7 @@
 				E43885A61B28C7AC00974FD1 /* iLamps.app */,
 				E43885BA1B28C7AC00974FD1 /* iLampsTests.xctest */,
 				E43885C51B28C7AC00974FD1 /* iLampsUITests.xctest */,
+				DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +186,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA3F2DED1BB067EC0091E1E2 /* iLamps Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA3F2DFE1BB067EC0091E1E2 /* Build configuration list for PBXNativeTarget "iLamps Widget" */;
+			buildPhases = (
+				DA3F2DEA1BB067EC0091E1E2 /* Sources */,
+				DA3F2DEB1BB067EC0091E1E2 /* Frameworks */,
+				DA3F2DEC1BB067EC0091E1E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iLamps Widget";
+			productName = "iLamps Widget";
+			productReference = DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E43885A51B28C7AC00974FD1 /* iLamps */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E43885CE1B28C7AC00974FD1 /* Build configuration list for PBXNativeTarget "iLamps" */;
@@ -134,10 +210,12 @@
 				E43885A21B28C7AC00974FD1 /* Sources */,
 				E43885A31B28C7AC00974FD1 /* Frameworks */,
 				E43885A41B28C7AC00974FD1 /* Resources */,
+				DA3F2DFF1BB067EC0091E1E2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA3F2DFA1BB067EC0091E1E2 /* PBXTargetDependency */,
 			);
 			name = iLamps;
 			productName = iLamps;
@@ -189,6 +267,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Paul Fleury";
 				TargetAttributes = {
+					DA3F2DED1BB067EC0091E1E2 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5639HP753H;
+					};
 					E43885A51B28C7AC00974FD1 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 5639HP753H;
@@ -219,11 +301,20 @@
 				E43885A51B28C7AC00974FD1 /* iLamps */,
 				E43885B91B28C7AC00974FD1 /* iLampsTests */,
 				E43885C41B28C7AC00974FD1 /* iLampsUITests */,
+				DA3F2DED1BB067EC0091E1E2 /* iLamps Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA3F2DEC1BB067EC0091E1E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3F2DF71BB067EC0091E1E2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E43885A41B28C7AC00974FD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +341,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA3F2DEA1BB067EC0091E1E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3F2DF41BB067EC0091E1E2 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E43885A21B28C7AC00974FD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +377,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DA3F2DFA1BB067EC0091E1E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA3F2DED1BB067EC0091E1E2 /* iLamps Widget */;
+			targetProxy = DA3F2DF91BB067EC0091E1E2 /* PBXContainerItemProxy */;
+		};
 		E43885BC1B28C7AC00974FD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E43885A51B28C7AC00974FD1 /* iLamps */;
@@ -291,6 +395,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DA3F2DF51BB067EC0091E1E2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA3F2DF61BB067EC0091E1E2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		E43885AD1B28C7AC00974FD1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -302,6 +414,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA3F2DFC1BB067EC0091E1E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "iLamps Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pfleury.iLamps.iLamps-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA3F2DFD1BB067EC0091E1E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "iLamps Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pfleury.iLamps.iLamps-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		E43885CC1B28C7AC00974FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,6 +528,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = iLamps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -406,6 +545,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = iLamps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,6 +606,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA3F2DFE1BB067EC0091E1E2 /* Build configuration list for PBXNativeTarget "iLamps Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA3F2DFC1BB067EC0091E1E2 /* Debug */,
+				DA3F2DFD1BB067EC0091E1E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E43885A11B28C7AC00974FD1 /* Build configuration list for PBXProject "iLamps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
