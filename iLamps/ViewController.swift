@@ -76,12 +76,10 @@ class ViewController: UIViewController {
         let data = signal.dataUsingEncoding(NSUTF8StringEncoding)
         if outputStream.write(UnsafePointer<UInt8>(data!.bytes), maxLength: data!.length) == -1 {
             let error = outputStream.streamError?.description
-            if #available(iOS 8.0, *) {
                 let errorPopup: UIAlertController = UIAlertController(title: "Error", message: "An error as occured \(error)", preferredStyle: .Alert)
                 let okAction: UIAlertAction = UIAlertAction(title: "Ok", style: .Cancel) { action -> Void in }
                 errorPopup.addAction(okAction)
                 presentViewController(errorPopup, animated: true, completion: nil)
-            }
         }
     }
     
