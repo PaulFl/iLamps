@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA3F2DF11BB067EC0091E1E2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F2DF01BB067EC0091E1E2 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		DA3F2DF11BB067EC0091E1E2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F2DF01BB067EC0091E1E2 /* NotificationCenter.framework */; };
 		DA3F2DF41BB067EC0091E1E2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F2DF31BB067EC0091E1E2 /* TodayViewController.swift */; };
 		DA3F2DF71BB067EC0091E1E2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3F2DF51BB067EC0091E1E2 /* MainInterface.storyboard */; };
 		DA3F2DFB1BB067EC0091E1E2 /* iLamps Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -264,6 +264,7 @@
 		E438859E1B28C7AC00974FD1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Paul Fleury";
 				TargetAttributes = {
@@ -590,6 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = iLamps;
 				USES_XCTRUNNER = YES;
 			};
@@ -602,6 +604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = iLamps;
 				USES_XCTRUNNER = YES;
 			};
