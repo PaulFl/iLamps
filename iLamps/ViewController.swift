@@ -18,29 +18,29 @@ struct Actions {
 let serverAddress: CFString = "78.227.97.91"
 let serverPort: UInt32 = 1024
 
-var inputStream: NSInputStream!
+var inputStream: InputStream!
 var outputStream: NSOutputStream!
 var readStream:  Unmanaged<CFReadStream>?
 var writeStream: Unmanaged<CFWriteStream>?
 
 class ViewController: UIViewController {
     
-    @IBAction func onDesktop(sender: AnyObject) {
+    @IBAction func onDesktop(_ sender: AnyObject) {
         connectToServer()
         sendData(Actions.onDesktop)
     }
     
-    @IBAction func offDesktop(sender: AnyObject) {
+    @IBAction func offDesktop(_ sender: AnyObject) {
         connectToServer()
         sendData(Actions.offDesktop)
     }
     
-    @IBAction func onBed(sender: AnyObject) {
+    @IBAction func onBed(_ sender: AnyObject) {
         connectToServer()
         sendData(Actions.onBed)
     }
     
-    @IBAction func offBed(sender: AnyObject) {
+    @IBAction func offBed(_ sender: AnyObject) {
         connectToServer()
         sendData(Actions.offBed)
     }
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
@@ -64,22 +64,22 @@ class ViewController: UIViewController {
         inputStream = readStream!.takeRetainedValue()
         outputStream = writeStream!.takeRetainedValue()
         
-        inputStream.scheduleInRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
-        outputStream.scheduleInRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
+        inputStream.schedule(in: RunLoop.current(), forMode: RunLoopMode.defaultRunLoopMode)
+        outputStream.schedule(in: RunLoop.current(), forMode: RunLoopMode.defaultRunLoopMode)
         
         inputStream.open()
         outputStream.open()
     }
     
-    func sendData(action: Int) {
+    func sendData(_ action: Int) {
         let signal = String(action)
-        let data = signal.dataUsingEncoding(NSUTF8StringEncoding)
-        if outputStream.write(UnsafePointer<UInt8>(data!.bytes), maxLength: data!.length) == -1 {
+        let data = signal.data(using: String.Encoding.utf8)
+        if outputStream.write(UnsafePointer<UInt8>((data! as NSData).bytes), maxLength: data!.count) == -1 {
             let error = outputStream.streamError?.description
-                let errorPopup: UIAlertController = UIAlertController(title: "Error", message: "An error as occured \(error)", preferredStyle: .Alert)
-                let okAction: UIAlertAction = UIAlertAction(title: "Ok", style: .Cancel) { action -> Void in }
+                let errorPopup: UIAlertController = UIAlertController(title: "Error", message: "An error as occured \(error)", preferredStyle: .alert)
+                let okAction: UIAlertAction = UIAlertAction(title: "Ok", style: .cancel) { action -> Void in }
                 errorPopup.addAction(okAction)
-                presentViewController(errorPopup, animated: true, completion: nil)
+                present(errorPopup, animated: true, completion: nil)
         }
     }
     

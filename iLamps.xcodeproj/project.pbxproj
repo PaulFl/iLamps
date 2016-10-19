@@ -11,8 +11,6 @@
 		DA3F2DF41BB067EC0091E1E2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F2DF31BB067EC0091E1E2 /* TodayViewController.swift */; };
 		DA3F2DF71BB067EC0091E1E2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3F2DF51BB067EC0091E1E2 /* MainInterface.storyboard */; };
 		DA3F2DFB1BB067EC0091E1E2 /* iLamps Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA49D6621BB3220B004E5DAE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F2DF01BB067EC0091E1E2 /* NotificationCenter.framework */; };
-		DAE7339E1BB3DA5600E8A697 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F2DF01BB067EC0091E1E2 /* NotificationCenter.framework */; };
 		E43885AA1B28C7AC00974FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43885A91B28C7AC00974FD1 /* AppDelegate.swift */; };
 		E43885AC1B28C7AC00974FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43885AB1B28C7AC00974FD1 /* ViewController.swift */; };
 		E43885AF1B28C7AC00974FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43885AD1B28C7AC00974FD1 /* Main.storyboard */; };
@@ -65,8 +63,9 @@
 		DA3F2DF31BB067EC0091E1E2 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		DA3F2DF61BB067EC0091E1E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DA3F2DF81BB067EC0091E1E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA49D6611BB3220B004E5DAE /* Lamps Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lamps Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAE7339D1BB3DA5600E8A697 /* Lamps.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Lamps.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB1CBB91BC6CB0100BBE021 /* Lamps Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Lamps Widget.entitlements"; path = "Lamps Widget/Lamps Widget.entitlements"; sourceTree = "<group>"; };
+		DAB1CBBA1BC6CB2000BBE021 /* Lamps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Lamps.entitlements; path = Lamps/Lamps.entitlements; sourceTree = "<group>"; };
+		DAB1CBBB1BC6CB3200BBE021 /* iLamps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iLamps.entitlements; sourceTree = "<group>"; };
 		E43885A61B28C7AC00974FD1 /* iLamps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLamps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43885A91B28C7AC00974FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E43885AB1B28C7AC00974FD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,22 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3F2DF11BB067EC0091E1E2 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA49D65E1BB3220B004E5DAE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA49D6621BB3220B004E5DAE /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAE7339A1BB3DA5600E8A697 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAE7339E1BB3DA5600E8A697 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +135,8 @@
 		E438859D1B28C7AC00974FD1 = {
 			isa = PBXGroup;
 			children = (
+				DAB1CBBA1BC6CB2000BBE021 /* Lamps.entitlements */,
+				DAB1CBB91BC6CB0100BBE021 /* Lamps Widget.entitlements */,
 				E43885A81B28C7AC00974FD1 /* iLamps */,
 				E43885BD1B28C7AC00974FD1 /* iLampsTests */,
 				E43885C81B28C7AC00974FD1 /* iLampsUITests */,
@@ -168,8 +153,6 @@
 				E43885BA1B28C7AC00974FD1 /* iLampsTests.xctest */,
 				E43885C51B28C7AC00974FD1 /* iLampsUITests.xctest */,
 				DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */,
-				DA49D6611BB3220B004E5DAE /* Lamps Widget.appex */,
-				DAE7339D1BB3DA5600E8A697 /* Lamps.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +160,7 @@
 		E43885A81B28C7AC00974FD1 /* iLamps */ = {
 			isa = PBXGroup;
 			children = (
+				DAB1CBBB1BC6CB3200BBE021 /* iLamps.entitlements */,
 				E43885A91B28C7AC00974FD1 /* AppDelegate.swift */,
 				E43885AB1B28C7AC00974FD1 /* ViewController.swift */,
 				E43885AD1B28C7AC00974FD1 /* Main.storyboard */,
@@ -223,40 +207,6 @@
 			name = "iLamps Widget";
 			productName = "iLamps Widget";
 			productReference = DA3F2DEE1BB067EC0091E1E2 /* iLamps Widget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		DA49D6601BB3220B004E5DAE /* Lamps Widget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA49D6711BB3220B004E5DAE /* Build configuration list for PBXNativeTarget "Lamps Widget" */;
-			buildPhases = (
-				DA49D65D1BB3220B004E5DAE /* Sources */,
-				DA49D65E1BB3220B004E5DAE /* Frameworks */,
-				DA49D65F1BB3220B004E5DAE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Lamps Widget";
-			productName = "Lamps Widget";
-			productReference = DA49D6611BB3220B004E5DAE /* Lamps Widget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		DAE7339C1BB3DA5600E8A697 /* Lamps */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAE733B01BB3DA5600E8A697 /* Build configuration list for PBXNativeTarget "Lamps" */;
-			buildPhases = (
-				DAE733991BB3DA5600E8A697 /* Sources */,
-				DAE7339A1BB3DA5600E8A697 /* Frameworks */,
-				DAE7339B1BB3DA5600E8A697 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Lamps;
-			productName = Lamps;
-			productReference = DAE7339D1BB3DA5600E8A697 /* Lamps.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		E43885A51B28C7AC00974FD1 /* iLamps */ = {
@@ -321,29 +271,32 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Paul Fleury";
 				TargetAttributes = {
 					DA3F2DED1BB067EC0091E1E2 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = J9S55HH3EC;
-					};
-					DA49D6601BB3220B004E5DAE = {
-						CreatedOnToolsVersion = 7.1;
-					};
-					DAE7339C1BB3DA5600E8A697 = {
-						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 					};
 					E43885A51B28C7AC00974FD1 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = J9S55HH3EC;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
 					};
 					E43885B91B28C7AC00974FD1 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = E43885A51B28C7AC00974FD1;
 					};
 					E43885C41B28C7AC00974FD1 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = E43885A51B28C7AC00974FD1;
 					};
 				};
@@ -365,8 +318,6 @@
 				E43885B91B28C7AC00974FD1 /* iLampsTests */,
 				E43885C41B28C7AC00974FD1 /* iLampsUITests */,
 				DA3F2DED1BB067EC0091E1E2 /* iLamps Widget */,
-				DA49D6601BB3220B004E5DAE /* Lamps Widget */,
-				DAE7339C1BB3DA5600E8A697 /* Lamps */,
 			);
 		};
 /* End PBXProject section */
@@ -377,20 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3F2DF71BB067EC0091E1E2 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA49D65F1BB3220B004E5DAE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAE7339B1BB3DA5600E8A697 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,20 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3F2DF41BB067EC0091E1E2 /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA49D65D1BB3220B004E5DAE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAE733991BB3DA5600E8A697 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,10 +437,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iLamps Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pfleury.iLamp.iLamp-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pfleury.iLampv1.iLamp-Widgetv1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -528,74 +452,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iLamps Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pfleury.iLamp.iLamp-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pfleury.iLampv1.iLamp-Widgetv1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DA49D66F1BB3220B004E5DAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Lamps Widget/Lamps_Widget.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Lamps Widget/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "pfleury.Lamps-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DA49D6701BB3220B004E5DAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Lamps Widget/Lamps_Widget.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Lamps Widget/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "pfleury.Lamps-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DAE733B11BB3DA5600E8A697 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Lamps/Lamps.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Lamps/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = pfleury.Lamps;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DAE733B21BB3DA5600E8A697 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Lamps/Lamps.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Lamps/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = pfleury.Lamps;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -683,17 +545,18 @@
 		E43885CF1B28C7AC00974FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = iLamps/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampv1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -701,17 +564,19 @@
 		E43885D01B28C7AC00974FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = iLamps/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampv1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -724,6 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLamps.app/iLamps";
 			};
 			name = Debug;
@@ -736,6 +602,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLamps.app/iLamps";
 			};
 			name = Release;
@@ -748,6 +616,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = iLamps;
 				USES_XCTRUNNER = YES;
 			};
@@ -761,6 +630,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfleury.iLampsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = iLamps;
 				USES_XCTRUNNER = YES;
 			};
@@ -777,23 +648,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		DA49D6711BB3220B004E5DAE /* Build configuration list for PBXNativeTarget "Lamps Widget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA49D66F1BB3220B004E5DAE /* Debug */,
-				DA49D6701BB3220B004E5DAE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAE733B01BB3DA5600E8A697 /* Build configuration list for PBXNativeTarget "Lamps" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DAE733B11BB3DA5600E8A697 /* Debug */,
-				DAE733B21BB3DA5600E8A697 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		E43885A11B28C7AC00974FD1 /* Build configuration list for PBXProject "iLamps" */ = {
 			isa = XCConfigurationList;
